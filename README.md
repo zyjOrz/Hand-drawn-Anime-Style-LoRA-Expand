@@ -1,46 +1,84 @@
-# Hand-drawn-Anime-Style-LoRA-Expand
+下面是专业英文项目展示风格的 README 版本，可以直接替换原 README：
 
-以下是利用本LoRA生成的图片
+````markdown
+# Hand-drawn Anime Style LoRA Expand
+
+This project provides a LoRA model based on SDXL, designed to generate images in a specific hand-drawn anime and manga-inspired style.
 
 ![example.jpg](https://s2.loli.net/2025/02/14/Gc2Yevg37z5jPFm.jpg)
 
 ---
 
-## 目录
+## Table of Contents
 
-欢迎访问我的项目！本项目包括几个部分：
-- [简介](#简介)
-- [介绍](#介绍)
-- [特性](#特性)
-- [使用指南](#使用指南)
-
-## 简介
-Hand-drawn-Anime-Style-LoRA-Expand是一个基于SDXL的拥有生成特定手绘漫画画风的LoRA模型及其拓展。
+- [Overview](#overview)
+- [Introduction](#introduction)
+- [Features](#features)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
 
 ---
 
-## 介绍
-这个项目使用 **LoRA** 方法在 **SDXL** 的基础上进行微调，使其能够生成带有手绘漫画风格的图像。
+## Overview
 
-同时搭载了LCM_LoRA，可以加速推理，七步推理内生成图片。
+**Hand-drawn Anime Style LoRA Expand** is an SDXL-based LoRA project for generating images with a distinctive hand-drawn anime illustration style.
 
-搭载了IP_adapter，可以根据用户上传的图片进行手绘画风的风格迁移。
-
-使用gradio库编写webui, 将具有生成特定手绘动漫画风能力的AI上线网站
+The project includes the trained LoRA model, training dataset, training script, and a Gradio-based Web UI for online image generation and style transfer.
 
 ---
 
-## 使用指南
+## Introduction
 
-克隆本项目：
-   ```bash
-   git clone https://github.com/zyjOrz/Hand-drawn-Anime-Style-LoRA.git
-   cd Hand-drawn-Anime-Style-LoRA
+This project fine-tunes **SDXL** using the **LoRA** technique, enabling the model to generate images with a customized hand-drawn manga and anime aesthetic.
+
+In addition, the project integrates **LCM-LoRA** to accelerate inference, allowing high-quality image generation within approximately seven inference steps.
+
+The project also supports **IP-Adapter**, which enables users to upload reference images and transfer them into the target hand-drawn anime style.
+
+A **Gradio Web UI** is provided to make the model easy to use through an interactive web application.
+
+---
+
+## Features
+
+- SDXL-based LoRA model for hand-drawn anime-style image generation
+- Customized manga-inspired visual style
+- LCM-LoRA support for fast image generation
+- IP-Adapter support for image-guided style transfer
+- Gradio-based Web UI for convenient online interaction
+- Includes dataset and training script for LoRA fine-tuning
+
+---
+
+## Usage
+
+Clone this repository:
+
+```bash
+git clone https://github.com/zyjOrz/Hand-drawn-Anime-Style-LoRA.git
+cd Hand-drawn-Anime-Style-LoRA
+````
+
+---
+
+## Project Structure
+
+* `dataset`
+  The dataset used for training the LoRA model.
+
+* `train_text_to_image_lora_sdxl.py`
+  The training script used to fine-tune the SDXL LoRA model.
+
+* `gradio_ip.py`
+  The backend script for the AI web application. It integrates IP-Adapter and LCM-LoRA for reference-image-based style transfer and accelerated inference.
+
+---
+
+## Demo
+
+The following image shows the Gradio-based Web UI of the project:
+
+![demo.png](https://s2.loli.net/2025/02/18/2lxh79jFtPSkDdN.png)
+
 ```
-`dataset` 是用于训练lora的训练集
-
-`train_text_to_image_lora_sdxl.py` 是使用的训练脚本
-
-`gradio_ip.py` ai应用后端，配备IP_adapter和LCM_lora的功能。
-
-![1ac1acf2df7adb162cbd3ce7ac8e4bec.png](https://s2.loli.net/2025/02/18/2lxh79jFtPSkDdN.png)
+```
