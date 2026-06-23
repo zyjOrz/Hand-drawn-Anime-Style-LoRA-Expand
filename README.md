@@ -1,6 +1,4 @@
-下面是专业英文项目展示风格的 README 版本，可以直接替换原 README：
 
-````markdown
 # Hand-drawn Anime Style LoRA Expand
 
 This project provides a LoRA model based on SDXL, designed to generate images in a specific hand-drawn anime and manga-inspired style.
@@ -81,4 +79,4 @@ The following image shows the Gradio-based Web UI of the project:
 ![demo.png](https://s2.loli.net/2025/02/18/2lxh79jFtPSkDdN.png)
 
 ```
-```
+
