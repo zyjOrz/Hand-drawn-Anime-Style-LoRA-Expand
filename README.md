@@ -1,5 +1,7 @@
 # Hand-drawn-Anime-Style-LoRA-Expand
 
+以下是利用本LoRA生成的图片
+
 ![example.jpg](https://s2.loli.net/2025/02/14/Gc2Yevg37z5jPFm.jpg)
 
 ---
